@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	/* Colors */
+	--primaryBlack: #111111;
+	--primaryGreen: #1b5b31;
+	--primaryGrey: #f5f0ec;
+	--primaryBeige: #dcc1ab;
+	--primaryWhite: #ffffff;
+
+	/* Fonts */
+	--montserrat: 'Montserrat', sans-serif;
+	--inter: 'Inter', sans-serif;
+}
+
+@layer base {
+	body {
+		color: var(--primaryBlack);
+		font-family: var(--inter);
+	}
+}
