@@ -720,6 +720,18 @@ img {
   margin-top: 72px;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-\[14px\] {
+  margin-top: 14px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -756,6 +768,10 @@ img {
   width: 0px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -770,10 +786,6 @@ img {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-\[1040px\] {
@@ -949,6 +961,10 @@ img {
   padding: 1rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -989,6 +1005,46 @@ img {
   padding-bottom: 0.75rem;
 }
 
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.px-\[110px\] {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.px-\[100px\] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.px-\[90px\] {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-\[160px\] {
   padding-bottom: 160px;
 }
@@ -1011,6 +1067,10 @@ img {
   line-height: 2.5rem;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1027,8 +1087,20 @@ img {
   line-height: 116.667%;
 }
 
+.leading-\[120\%\] {
+  line-height: 120%;
+}
+
 .tracking-\[-1\.44px\] {
   letter-spacing: -1.44px;
+}
+
+.tracking-\[1px\] {
+  letter-spacing: 1px;
+}
+
+.tracking-\[-2px\] {
+  letter-spacing: -2px;
 }
 
 .text-primaryGreen {
@@ -1037,6 +1109,10 @@ img {
 
 .text-primaryWhite {
   color: var(--primaryWhite);
+}
+
+.text-primaryGrey {
+  color: var(--primaryGrey);
 }
 
 .opacity-0 {
@@ -1158,6 +1234,10 @@ ul > li > a:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -1187,6 +1267,16 @@ ul > li > a:hover {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-\[110px\] {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .lg\:py-\[120px\] {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .lg\:pl-24 {
