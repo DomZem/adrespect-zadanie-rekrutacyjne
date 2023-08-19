@@ -455,6 +455,10 @@ img {
   max-width: 100%;
 }
 
+ul > li > a:hover {
+  color: var(--primaryGreen);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -555,6 +559,8 @@ img {
   --tw-backdrop-sepia:  ;
 }
 
+/* Button */
+
 .button {
   border-radius: 9999px;
   padding-left: 1.5rem;
@@ -643,6 +649,51 @@ img {
   width: 100%;
 }
 
+/* Masonry */
+
+.masonry-background::after {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50%;
+  background-image: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.grid-sizer,
+	.grid-item {
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .grid-sizer,
+	.grid-item {
+    width: 33.333333%;
+  }
+}
+
+.grid-item {
+  margin-bottom: 43px;
+  display: flex;
+}
+
+.grid-item > img {
+  flex: 1 1 0%;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-duration: 200ms;
+}
+
+.grid-item > img:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .fixed {
   position: fixed;
 }
@@ -661,6 +712,10 @@ img {
 
 .left-0 {
   left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
 }
 
 .right-0 {
@@ -683,6 +738,10 @@ img {
   top: 72px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -703,6 +762,10 @@ img {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-24 {
@@ -731,14 +794,6 @@ img {
 
 .mt-\[72px\] {
   margin-top: 72px;
-}
-
-.mb-\[120px\] {
-  margin-bottom: 120px;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .inline-block {
@@ -805,6 +860,10 @@ img {
   max-width: 1040px;
 }
 
+.max-w-\[1120px\] {
+  max-width: 1120px;
+}
+
 .max-w-\[596px\] {
   max-width: 596px;
 }
@@ -823,6 +882,11 @@ img {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-x-full {
@@ -900,10 +964,6 @@ img {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -924,24 +984,19 @@ img {
        column-gap: 0.75rem;
 }
 
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
 }
 
-.gap-x-6 {
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-}
-
 .gap-x-\[5px\] {
   -moz-column-gap: 5px;
        column-gap: 5px;
-}
-
-.gap-x-4 {
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
 }
 
 .gap-y-5 {
@@ -962,6 +1017,10 @@ img {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-primaryBlack {
+  border-color: var(--primaryBlack);
 }
 
 .border-primaryGreen {
@@ -1034,14 +1093,14 @@ img {
   padding-bottom: 2.5rem;
 }
 
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .py-3 {
@@ -1054,14 +1113,12 @@ img {
   padding-bottom: 60px;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.pb-11 {
+  padding-bottom: 2.75rem;
 }
 
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pb-\[160px\] {
@@ -1084,6 +1141,11 @@ img {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[40px\] {
@@ -1210,10 +1272,6 @@ img {
   transform: translateY(-235%) rotate(-45deg);
 }
 
-ul > li > a:hover {
-  color: var(--primaryGreen);
-}
-
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1233,16 +1291,16 @@ ul > li > a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-\[120px\] {
+    margin-bottom: 120px;
+  }
+
   .lg\:mb-\[72px\] {
     margin-bottom: 72px;
   }
 
   .lg\:mt-11 {
     margin-top: 2.75rem;
-  }
-
-  .lg\:mb-\[120px\] {
-    margin-bottom: 120px;
   }
 
   .lg\:block {
@@ -1273,10 +1331,6 @@ ul > li > a:hover {
     flex-direction: row;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -1285,16 +1339,12 @@ ul > li > a:hover {
     justify-content: flex-end;
   }
 
-  .lg\:gap-9 {
-    gap: 2.25rem;
-  }
-
   .lg\:gap-12 {
     gap: 3rem;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
+  .lg\:gap-9 {
+    gap: 2.25rem;
   }
 
   .lg\:gap-x-8 {
@@ -1316,6 +1366,11 @@ ul > li > a:hover {
     padding-right: 110px;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -1324,11 +1379,6 @@ ul > li > a:hover {
   .lg\:py-\[120px\] {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .lg\:pl-24 {

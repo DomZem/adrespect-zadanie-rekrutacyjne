@@ -31,9 +31,14 @@
 	img {
 		max-width: 100%;
 	}
+
+	ul > li > a:hover {
+		@apply text-primaryGreen;
+	}
 }
 
 @layer components {
+	/* Button */
 	.button {
 		@apply rounded-full px-6 py-3 duration-200;
 	}
@@ -58,6 +63,24 @@
 
 	.card-button {
 		@apply flex pb-1 items-center gap-x-[10px] text-primaryGreen relative after:content-[''] after:absolute after:bottom-0 after:w-3/4 after:h-[1px] after:duration-200 after:bg-primaryGreen hover:after:w-full;
+	}
+
+	/* Masonry */
+	.masonry-background {
+		@apply after:content-[''] after:absolute after:bottom-0 after:pointer-events-none after:left-0 after:right-0 after:h-1/2 after:bg-masonry-gradient;
+	}
+
+	.grid-sizer,
+	.grid-item {
+		@apply w-1/2 lg:w-1/3;
+	}
+
+	.grid-item {
+		@apply flex mb-[43px];
+	}
+
+	.grid-item > img {
+		@apply flex-1 object-cover cursor-pointer hover:scale-105 duration-200;
 	}
 }
 
@@ -89,8 +112,4 @@
 
 .hamburger-button-is-active .hamburger-button-bar-3 {
 	transform: translateY(-235%) rotate(-45deg);
-}
-
-ul > li > a:hover {
-	color: var(--primaryGreen);
 }

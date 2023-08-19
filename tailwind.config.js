@@ -20,6 +20,9 @@ module.exports = {
 				montserrat: 'var(--montserrat)',
 				inter: 'var(--inter)',
 			},
+			backgroundImage: {
+				'masonry-gradient': 'linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%)',
+			},
 		},
 	},
 	plugins: [],
