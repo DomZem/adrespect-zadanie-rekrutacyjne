@@ -23,6 +23,10 @@
 	body {
 		@apply font-inter text-sm md:text-base;
 	}
+
+	p {
+		@apply tracking-[-0.16px];
+	}
 }
 
 @layer components {
@@ -32,6 +36,24 @@
 
 	.primaryGreenButton {
 		@apply bg-primaryGreen text-primaryGrey hover:bg-primaryWhite hover:text-primaryGreen;
+	}
+
+	/* Card */
+
+	.card {
+		@apply py-12 px-10 bg-primaryWhite rounded-[28px] lg:hover:shadow-md lg:duration-200 lg:hover:scale-105;
+	}
+
+	.card-title {
+		@apply font-montserrat mt-8 leading-[115%] font-medium text-[28px] tracking-[-1.4px];
+	}
+
+	.card-content {
+		@apply mb-[63px] text-sm mt-3 tracking-[-0.14px];
+	}
+
+	.card-button {
+		@apply flex pb-1 items-center gap-x-[10px] text-primaryGreen relative after:content-[''] after:absolute after:bottom-0 after:w-3/4 after:h-[1px] after:duration-200 after:bg-primaryGreen hover:after:w-full;
 	}
 }
 
