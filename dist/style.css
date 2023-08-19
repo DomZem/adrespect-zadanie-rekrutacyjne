@@ -451,6 +451,10 @@ p {
   letter-spacing: -0.16px;
 }
 
+img {
+  max-width: 100%;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -700,6 +704,14 @@ p {
   margin-bottom: 6rem;
 }
 
+.mb-\[72px\] {
+  margin-bottom: 72px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -760,8 +772,16 @@ p {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-\[1040px\] {
   max-width: 1040px;
+}
+
+.max-w-\[596px\] {
+  max-width: 596px;
 }
 
 .max-w-\[599px\] {
@@ -819,10 +839,6 @@ p {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 .items-center {
   align-items: center;
 }
@@ -843,20 +859,16 @@ p {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-9 {
-  gap: 2.25rem;
 }
 
 .gap-x-12 {
@@ -913,6 +925,10 @@ p {
   background-color: var(--primaryBeige);
 }
 
+.bg-primaryGreen {
+  background-color: var(--primaryGreen);
+}
+
 .bg-primaryGrey {
   background-color: var(--primaryGrey);
 }
@@ -958,6 +974,11 @@ p {
   padding-bottom: 0.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -980,14 +1001,14 @@ p {
   font-family: var(--montserrat);
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-medium {
@@ -1012,6 +1033,10 @@ p {
 
 .text-primaryGreen {
   color: var(--primaryGreen);
+}
+
+.text-primaryWhite {
+  color: var(--primaryWhite);
 }
 
 .opacity-0 {
@@ -1095,16 +1120,8 @@ ul > li > a:hover {
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-nowrap {
-    flex-wrap: nowrap;
   }
 }
 
@@ -1141,8 +1158,8 @@ ul > li > a:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:flex-nowrap {
-    flex-wrap: nowrap;
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-end {
@@ -1158,6 +1175,10 @@ ul > li > a:hover {
          column-gap: 2rem;
   }
 
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1166,6 +1187,15 @@ ul > li > a:hover {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-6xl {
