@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>giarddesign</title>
+  <title>GiardDesign</title>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
   <header
     class="h-headerHeight w-full fixed top-0 left-0 bg-primaryWhite shadow-md right-0 z-50 flex justify-center items-center">
     <div class="max-w-containerWidth w-full flex justify-between px-3">
-      <img src="./img/giarddesign-logo.svg" alt="giarddesign logo">
+      <img src="./assets/giarddesign-logo.svg" alt="giarddesign logo">
 
       <nav>
         <button class="hamburger-button lg:hidden">
@@ -36,7 +36,7 @@
             <input class="outline-none px-2 py-1 rounded-md border shadow-sm" type="text" placeholder="Wyszukaj">
 
             <button>
-              <img src="./img/icons/search-icon.svg" alt="search icon">
+              <img src="./assets/icons/search-icon.svg" alt="search icon">
             </button>
           </div>
 
@@ -45,7 +45,7 @@
             <li class="border-b py-3">
               Oferta
               <button class="mobile-dropdown-menu-button">
-                <img src="./img/icons/arrow-down-icon.svg" alt="arrow down icon">
+                <img src="./assets/icons/arrow-down-icon.svg" alt="arrow down icon">
               </button>
 
               <ul class="px-2 flex-col hidden mobile-dropdown-menu">
@@ -84,7 +84,7 @@
             <li class="relative">
               <button class="desktop-dropdown-menu-button flex items-center gap-x-[5px]">
                 Oferta
-                <img src="./img/icons/arrow-down-icon.svg" alt="search icon" />
+                <img src="./assets/icons/arrow-down-icon.svg" alt="search icon" />
               </button>
               <div
                 class="absolute right-1/2 translate-x-1/2 top-8 bg-primaryWhite hidden w-[200%] shadow-md p-4 rounded-lg desktop-dropdown-menu">
@@ -120,7 +120,7 @@
               class="outline-none px-2 py-1 rounded-md border shadow-sm translate-x-full opacity-0 w-0 duration-200 search-input"
               type="text" placeholder="Wyszukaj">
             <button class="search-input-button">
-              <img src="./img/icons/search-icon.svg" alt="search icon">
+              <img src="./assets/icons/search-icon.svg" alt="search icon">
             </button>
           </div>
         </div>
@@ -129,8 +129,64 @@
     </div>
   </header>
 
+  <!-- Intro -->
+  <section>
+    <!-- Intro -->
+    <section class="h-[calc(100vh-72px)] mt-[72px] bg-primaryBeige relative">
+
+      <ul class="h-full">
+        <!-- First slide -->
+        <li class="h-full gap-x-16 justify-center slide-fade-in slide">
+          <div class="flex-1 flex justify-center lg:justify-end items-center">
+            <div class="max-w-[599px] w-full px-3">
+              <h1 class="font-montserrat font-medium text-4xl lg:text-6xl leading-[116.667%]">Nowoczesna aranżacja
+                Twojego ogrodu
+              </h1>
+
+              <p class="mt-8 mb-10 lg:mt-11 lg:mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                estetyka
+                realizacji.
+                Oferujemy
+                kompleksowy
+                zakres
+                usług z
+                indywidualnym podejściem do każdego projektu.</p>
+
+              <div class="inline-flex flex-col gap-4 lg:gap-9">
+                <button class="button primaryGreenButton">Skontaktuj się z nami</button>
+                <button
+                  class="bg-transparent border-primaryGreen button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px]">Zobacz
+                  nasze realizacje
+                  <img class="animate-bounce" src="./assets/icons/green-arrow-down-icon.svg"
+                    alt="arrow down icon"></button>
+              </div>
+            </div>
+          </div>
+
+          <img class="hidden lg:block flex-1" src="./assets/img/intro-garden-medium.jpg" alt="intro garden">
+        </li>
+      </ul>
+
+
+      <!-- Buttons to slide -->
+      <div class="absolute bottom-0 right-0 flex gap-x-5 lg:gap-x-8 bg-primaryWhite py-3 px-5 lg:py-6 lg:px-8 z-40">
+        <!-- Previous -->
+        <button class="previousSlideButton w-7 h-7 lg:w-auto lg:h-auto">
+          <img src="./assets/icons/left-arrow-icon.svg" alt="left arrow icon" />
+        </button>
+
+        <!-- Next -->
+        <button class="nextSlideButton w-7 h-7 lg:w-auto lg:h-auto" onclick="plusSlides(1)">
+          <img src="./assets/icons/right-arrow-icon.svg" alt="right arrow icon" />
+        </button>
+      </div>
+    </section>
+  </section>
+
+  <!-- Scripts -->
   <script src="./js/app.js"></script>
   <script src="./js/dropDownMenu.js"></script>
+  <script src="./js/slide.js"></script>
 </body>
 
 </html>

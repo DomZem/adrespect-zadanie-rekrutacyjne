@@ -547,6 +547,25 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.button {
+  border-radius: 9999px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  transition-duration: 200ms;
+}
+
+.primaryGreenButton {
+  background-color: var(--primaryGreen);
+  color: var(--primaryGrey);
+}
+
+.primaryGreenButton:hover {
+  background-color: var(--primaryWhite);
+  color: var(--primaryGreen);
+}
+
 .fixed {
   position: fixed;
 }
@@ -595,6 +614,18 @@ body {
   z-index: 50;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-\[72px\] {
+  margin-top: 72px;
+}
+
 .flex {
   display: flex;
 }
@@ -607,12 +638,28 @@ body {
   display: none;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-\[calc\(100vh-72px\)\] {
+  height: calc(100vh - 72px);
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-headerHeight {
   height: var(--headerHeight);
 }
 
 .w-0 {
   width: 0px;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-\[200\%\] {
@@ -627,8 +674,16 @@ body {
   width: 100%;
 }
 
+.max-w-\[599px\] {
+  max-width: 599px;
+}
+
 .max-w-containerWidth {
   max-width: var(--containerWidth);
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .-translate-x-full {
@@ -644,6 +699,22 @@ body {
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .flex-col {
@@ -666,12 +737,12 @@ body {
   gap: 3rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-x-12 {
@@ -679,14 +750,33 @@ body {
        column-gap: 3rem;
 }
 
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .gap-x-\[5px\] {
   -moz-column-gap: 5px;
        column-gap: 5px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -705,12 +795,20 @@ body {
   border-bottom-width: 1px;
 }
 
+.border-primaryGreen {
+  border-color: var(--primaryGreen);
+}
+
+.bg-primaryBeige {
+  background-color: var(--primaryBeige);
+}
+
 .bg-primaryWhite {
   background-color: var(--primaryWhite);
 }
 
-.p-2 {
-  padding: 0.5rem;
+.bg-transparent {
+  background-color: transparent;
 }
 
 .p-3 {
@@ -731,14 +829,19 @@ body {
   padding-right: 0.75rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-2 {
@@ -746,8 +849,30 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.pt-3 {
+.py-3 {
   padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.font-montserrat {
+  font-family: var(--montserrat);
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.leading-\[116\.667\%\] {
+  line-height: 116.667%;
+}
+
+.text-primaryGreen {
+  color: var(--primaryGreen);
 }
 
 .opacity-0 {
@@ -830,12 +955,72 @@ ul > li > a:hover {
   color: var(--primaryGreen);
 }
 
+.hover\:bg-primaryGreen:hover {
+  background-color: var(--primaryGreen);
+}
+
+.hover\:text-primaryWhite:hover {
+  color: var(--primaryWhite);
+}
+
+.peer:hover ~ .peer-hover\:w-20 {
+  width: 5rem;
+}
+
 @media (min-width: 1024px) {
+  .lg\:mb-\[72px\] {
+    margin-bottom: 72px;
+  }
+
+  .lg\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .lg\:gap-9 {
+    gap: 2.25rem;
+  }
+
+  .lg\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }

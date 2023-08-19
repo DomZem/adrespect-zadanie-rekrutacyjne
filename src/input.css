@@ -25,6 +25,16 @@
 	}
 }
 
+@layer components {
+	.button {
+		@apply rounded-full px-6 py-3 duration-200;
+	}
+
+	.primaryGreenButton {
+		@apply bg-primaryGreen text-primaryGrey hover:bg-primaryWhite hover:text-primaryGreen;
+	}
+}
+
 .hamburger-button {
 	border: 0;
 	width: 34px;
