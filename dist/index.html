@@ -15,11 +15,122 @@
 </head>
 
 <body>
-  <div class="h-screen flex justify-center items-center">
-    <h1>
-      Hello World!
-    </h1>
-  </div>
+  <!-- Header -->
+  <header
+    class="h-headerHeight w-full fixed top-0 left-0 bg-primaryWhite shadow-md right-0 z-50 flex justify-center items-center">
+    <div class="max-w-containerWidth w-full flex justify-between px-3">
+      <img src="./img/giarddesign-logo.svg" alt="giarddesign logo">
+
+      <nav>
+        <button class="hamburger-button lg:hidden">
+          <span class="hamburger-button-bar hamburger-button-bar-1"></span>
+          <span class="hamburger-button-bar hamburger-button-bar-2"></span>
+          <span class="hamburger-button-bar hamburger-button-bar-3"></span>
+        </button>
+
+        <!-- Mobile menu -->
+        <div
+          class="fixed left-0 flex flex-col border -translate-x-full w-auto lg:hidden duration-200 mobile-menu top-[72px] bottom-0 shadow-lg bg-primaryWhite p-3 z-40">
+          <!-- Search input -->
+          <div class="inline-flex items-center gap-x-3">
+            <input class="outline-none px-2 py-1 rounded-md border shadow-sm" type="text" placeholder="Wyszukaj">
+
+            <button>
+              <img src="./img/icons/search-icon.svg" alt="search icon">
+            </button>
+          </div>
+
+          <ul class="flex flex-col">
+
+            <li class="border-b py-3">
+              Oferta
+              <button class="mobile-dropdown-menu-button">
+                <img src="./img/icons/arrow-down-icon.svg" alt="arrow down icon">
+              </button>
+
+              <ul class="px-2 flex-col hidden mobile-dropdown-menu">
+                <li class="py-2 border-b">
+                  <a href="#">Oferta 1</a>
+                </li>
+
+                <li class="py-2 border-b">
+                  <a href="#">Oferta 2</a>
+                </li>
+
+                <li class="py-2">
+                  <a href="#">Oferta 3</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="border-b py-3">
+              <a href="#">O firmie</a>
+            </li>
+
+            <li class="border-b py-3">
+              <a href="#">Realizacje</a>
+            </li>
+
+            <li class="border-b py-3">
+              <a href="#">Kontakt</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Desktop menu -->
+        <div class="hidden lg:flex items-center gap-x-12 duration-200">
+          <ul class="flex gap-12">
+            <li class="relative">
+              <button class="desktop-dropdown-menu-button flex items-center gap-x-[5px]">
+                Oferta
+                <img src="./img/icons/arrow-down-icon.svg" alt="search icon" />
+              </button>
+              <div
+                class="absolute right-1/2 translate-x-1/2 top-8 bg-primaryWhite hidden w-[200%] shadow-md p-4 rounded-lg desktop-dropdown-menu">
+                <ul class="flex flex-col gap-3">
+                  <li>
+                    <a href="#">Oferta 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Oferta 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Oferta 3</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#">O firmie</a>
+            </li>
+
+            <li>
+              <a href="#">Realizacje</a>
+            </li>
+
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="inline-flex items-center gap-x-3">
+            <input
+              class="outline-none px-2 py-1 rounded-md border shadow-sm translate-x-full opacity-0 w-0 duration-200 search-input"
+              type="text" placeholder="Wyszukaj">
+            <button class="search-input-button">
+              <img src="./img/icons/search-icon.svg" alt="search icon">
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/dropDownMenu.js"></script>
 </body>
 
 </html>

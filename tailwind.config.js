@@ -10,6 +10,12 @@ module.exports = {
 				primaryBeige: 'var(--primaryBeige)',
 				primaryWhite: 'var(--primaryWhite)',
 			},
+			height: {
+				headerHeight: 'var(--headerHeight)',
+			},
+			maxWidth: {
+				containerWidth: 'var(--containerWidth)',
+			},
 			fontFamily: {
 				montserrat: 'var(--montserrat)',
 				inter: 'var(--inter)',

@@ -13,11 +13,48 @@
 	/* Fonts */
 	--montserrat: 'Montserrat', sans-serif;
 	--inter: 'Inter', sans-serif;
+
+	/* Others */
+	--headerHeight: 72px;
+	--containerWidth: 1262px;
 }
 
 @layer base {
 	body {
-		color: var(--primaryBlack);
-		font-family: var(--inter);
+		@apply font-inter text-sm md:text-base;
 	}
+}
+
+.hamburger-button {
+	border: 0;
+	width: 34px;
+	padding: 0.4em;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	background-color: transparent;
+}
+
+.hamburger-button-bar {
+	width: 100%;
+	height: 3px;
+	border-radius: 1em;
+	background-color: var(--primaryBlack);
+	transition: 0.3s ease-in-out;
+}
+
+.hamburger-button-is-active .hamburger-button-bar-1 {
+	transform: translateY(235%) rotate(45deg);
+}
+
+.hamburger-button-is-active .hamburger-button-bar-2 {
+	background-color: transparent;
+}
+
+.hamburger-button-is-active .hamburger-button-bar-3 {
+	transform: translateY(-235%) rotate(-45deg);
+}
+
+ul > li > a:hover {
+	color: var(--primaryGreen);
 }
