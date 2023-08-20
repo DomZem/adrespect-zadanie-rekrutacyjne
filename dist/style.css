@@ -699,6 +699,10 @@ ul > li > a:hover {
   top: 0px;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .top-8 {
   top: 2rem;
 }
@@ -789,6 +793,10 @@ ul > li > a:hover {
   height: 1.75rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[calc\(100vh-72px\)\] {
   height: calc(100vh - 72px);
 }
@@ -811,6 +819,10 @@ ul > li > a:hover {
 
 .w-7 {
   width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[200\%\] {
@@ -860,6 +872,11 @@ ul > li > a:hover {
 
 .-translate-x-full {
   --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -976,6 +993,10 @@ ul > li > a:hover {
   overflow: hidden;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1000,6 +1021,11 @@ ul > li > a:hover {
   border-color: var(--primaryGreen);
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-primaryBeige {
   background-color: var(--primaryBeige);
 }
@@ -1020,8 +1046,17 @@ ul > li > a:hover {
   background-color: var(--primaryWhite);
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .p-3 {
@@ -1030,6 +1065,10 @@ ul > li > a:hover {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-8 {
@@ -1169,6 +1208,11 @@ ul > li > a:hover {
   color: var(--primaryWhite);
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1275,6 +1319,10 @@ ul > li > a:hover {
   transform: scale(1.01);
 }
 
+.grid-item-hidden {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .grid-sizer,
 	.grid-item {
@@ -1288,6 +1336,11 @@ ul > li > a:hover {
   .grid-item {
     margin-bottom: var(--masonryDesktopGutterWidth);
   }
+}
+
+.hover\:bg-red-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {

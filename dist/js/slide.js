@@ -24,9 +24,7 @@ const plusSlides = (n) => {
 	showSlides((slideIndex += n));
 };
 
-previousSlideButton.addEventListener('click', () => {
-	plusSlides(-1);
-});
+previousSlideButton.addEventListener('click', () => plusSlides(-1));
 nextSlideButton.addEventListener('click', () => plusSlides(1));
 
 showSlides(slideIndex);

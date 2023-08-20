@@ -1,34 +1,16 @@
-const grid = document.querySelector('.masonry-grid');
-const hiddenGridElements = document.querySelectorAll('.grid-item-hidden');
+const masonryContainer = document.getElementById('masonry-grid');
 const masonryBtn = document.querySelector('.masonry-button');
 
-const msnry = new Masonry(grid, {
+const msnry = new Masonry(masonryContainer, {
 	itemSelector: '.grid-item',
 	columnWidth: '.grid-sizer',
 	gutter: '.gutter-sizer',
 	percentPosition: true,
 });
 
-masonryBtn.addEventListener('click', () => {
-	var elems = [];
-	var fragment = document.createDocumentFragment();
-	for (var i = 0; i < 9; i++) {
-		var elem = getItemElement(i);
-		fragment.appendChild(elem);
-		elems.push(elem);
-	}
-
-	// append elements to grid container
-	grid.appendChild(fragment);
-	msnry.appended(elems);
-
-	masonryBtn.classList.add('hidden');
-	grid.classList.remove('masonry-background');
-});
-
-function getItemElement(index) {
+const getItemElement = (index) => {
 	const outerDiv = document.createElement('div');
-	outerDiv.classList.add('grid-item', 'grid-item-hidden');
+	outerDiv.classList.add('grid-item');
 
 	const imgElement = document.createElement('img');
 	imgElement.src = `./assets/img/garden/garden-${index + 1}.jpg`;
@@ -37,4 +19,22 @@ function getItemElement(index) {
 	outerDiv.appendChild(imgElement);
 
 	return outerDiv;
-}
+};
+
+masonryBtn.addEventListener('click', () => {
+	const elems = [];
+	const fragment = document.createDocumentFragment();
+
+	for (let i = 0; i < 9; i++) {
+		const elem = getItemElement(i);
+		fragment.appendChild(elem);
+		elems.push(elem);
+	}
+
+	// append elements to grid container
+	masonryContainer.appendChild(fragment);
+	msnry.appended(elems);
+
+	masonryBtn.classList.add('hidden');
+	masonryContainer.classList.remove('masonry-background');
+});
