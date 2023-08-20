@@ -895,6 +895,18 @@ ul > li > a:hover {
   margin-top: 72px;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-\[18px\] {
+  margin-bottom: 18px;
+}
+
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1238,6 +1250,16 @@ ul > li > a:hover {
   padding-bottom: 60px;
 }
 
+.py-\[89px\] {
+  padding-top: 89px;
+  padding-bottom: 89px;
+}
+
+.px-\[81px\] {
+  padding-left: 81px;
+  padding-right: 81px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1274,6 +1296,10 @@ ul > li > a:hover {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .font-medium {
@@ -1510,6 +1536,22 @@ ul > li > a:hover {
     margin-top: 2rem;
   }
 
+  .lg\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:mt-\[14px\] {
+    margin-top: 14px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:inline {
+    display: inline;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1546,6 +1588,10 @@ ul > li > a:hover {
     gap: 4rem;
   }
 
+  .lg\:gap-14 {
+    gap: 3.5rem;
+  }
+
   .lg\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -1580,6 +1626,11 @@ ul > li > a:hover {
     padding-bottom: 120px;
   }
 
+  .lg\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .lg\:pb-11 {
     padding-bottom: 2.75rem;
   }
@@ -1603,5 +1654,9 @@ ul > li > a:hover {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
   }
 }
