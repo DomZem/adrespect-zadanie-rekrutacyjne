@@ -29,7 +29,7 @@
 <body>
   <!-- Header -->
   <header
-    class="h-headerHeight w-full fixed top-0 left-0 bg-primaryWhite shadow-md right-0 z-50 flex justify-center items-center">
+    class="h-headerHeight w-full fixed top-0 left-0 bg-primaryWhite shadow-md right-0 z-40 flex justify-center items-center">
     <div class="max-w-containerWidth items-center w-full flex justify-between px-3">
       <a href="#index">
         <img src="./assets/giarddesign-logo.svg" alt="giarddesign logo">
@@ -147,26 +147,26 @@
   <section class="h-[calc(100vh-72px)] mt-[72px] bg-primaryBeige relative" id="index">
     <ul class="h-full">
       <!-- First slide -->
-      <li class="h-full gap-x-16 justify-center slide-fade-in slide">
-        <div class="flex-1 flex justify-center lg:justify-end items-center">
-          <div class="max-w-[599px] w-full px-3">
-            <h1 class="font-montserrat font-medium text-4xl lg:text-6xl leading-[116.667%]">Nowoczesna aranżacja
+      <li class="slide">
+        <div class="slide-container">
+          <div class="slide-wrapper">
+            <h1 class="slide-title">Nowoczesna
+              aranżacja <br>
               Twojego ogrodu
             </h1>
 
-            <p class="mt-8 mb-10 lg:mt-11 lg:mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka
+            <p class="slide-content">Marka GiardDesign to wieloletnie doświadczenie i wysoka <br>
               estetyka
               realizacji.
               Oferujemy
               kompleksowy
               zakres
-              usług z
+              usług <br> z
               indywidualnym podejściem do każdego projektu.</p>
 
-            <div class="inline-flex flex-col gap-4 lg:gap-9">
-              <button class="button primaryGreenButton">Skontaktuj się z nami</button>
-              <a href="#projects"
-                class="bg-transparent border-primaryGreen hover:bg-primaryGreen hover:text-primaryWhite button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px]">Zobacz
+            <div class="slide-buttons">
+              <a href="#contact" class="button primaryGreenButton">Skontaktuj się z nami</a>
+              <a href="#projects" class="slide-secondary-button ">Zobacz
                 nasze realizacje
                 <i class="fa-solid fa-arrow-down animate-bounce"></i>
               </a>
@@ -174,13 +174,79 @@
           </div>
         </div>
 
-        <img class="hidden lg:block flex-1" src="./assets/img/intro-garden-medium-1.jpg" alt="intro garden">
+        <div class="slide-image-wrapper">
+          <img class="slide-image" src="./assets/img/intro-garden-medium-1.jpg" alt="intro garden">
+        </div>
+      </li>
+
+      <!-- Second slide -->
+      <li class="slide">
+        <div class="slide-container">
+          <div class="slide-wrapper">
+            <h1 class="slide-title">Eleganckie
+              Przestrzenie Ogrodowe
+            </h1>
+
+            <p class="slide-content">Tworzymy niepowtarzalne ogrody o nowoczesnym designie, który
+              łączy funkcjonalność z estetyką. Nasza firma, GiardDesign,
+              posiada bogate doświadczenie oraz wysoką jakość wykonania projektów. Zapewniamy kompleksowe usługi,
+              dostosowane do
+              indywidualnych potrzeb każdego klienta. Skontaktuj się z nami, aby poznać więcej lub zobacz nasze
+              wcześniejsze
+              realizacje, które zainspirują Cię do stworzenia wymarzonego ogrodu.</p>
+
+            <div class="slide-buttons">
+              <a href="#contact" class="button primaryGreenButton">Skontaktuj się z nami</a>
+              <a href="#projects" class="slide-secondary-button">Zobacz
+                nasze realizacje
+                <i class="fa-solid fa-arrow-down animate-bounce"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-image-wrapper">
+          <img class="slide-image" src="./assets/img/intro-garden-medium-2.jpg" alt="intro garden">
+        </div>
+      </li>
+
+      <!-- Third slide -->
+      <li class="slide">
+        <div class="slide-container">
+          <div class="slide-wrapper">
+            <h1 class="slide-title">Ogród
+              Twych Marzeń – Współczesne Kreacje
+            </h1>
+
+            <p class="slide-content">Witaj w świecie GiardDesign, gdzie tworzenie nowoczesnych
+              ogrodów staje się sztuką. Nasze długoletnie doświadczenie oraz
+              wysokie standardy estetyczne gwarantują wyjątkowe realizacje. Każdy projekt traktujemy indywidualnie,
+              dostosowując się
+              do Twoich potrzeb. Przygotowaliśmy dla Ciebie kompleksową ofertę. Skontaktuj się, byśmy mogli razem
+              stworzyć
+              niepowtarzalny klimat Twojego ogrodu. A jeśli chcesz zobaczyć efekty naszej pracy, sięgnij po inspirację –
+              zobacz nasze
+              dotychczasowe osiągnięcia.</p>
+
+            <div class="slide-buttons">
+              <a href="#contact" class="button primaryGreenButton">Skontaktuj się z nami</a>
+              <a href="#projects" class="slide-secondary-button">Zobacz
+                nasze realizacje
+                <i class="fa-solid fa-arrow-down animate-bounce"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-image-wrapper">
+          <img class="slide-image" src="./assets/img/intro-garden-medium-3.jpg" alt="intro garden">
+        </div>
       </li>
     </ul>
 
 
     <!-- Buttons to slide -->
-    <div class="absolute bottom-0 right-0 flex gap-x-5 lg:gap-x-8 bg-primaryWhite py-3 px-5 lg:py-6 lg:px-8 z-40">
+    <div class="absolute bottom-0 right-0 bg-primaryWhite flex gap-x-6 lg:gap-x-8 py-4 px-6 lg:py-6 lg:px-8 z-40">
       <!-- Previous -->
       <button class="previousSlideButton w-7 h-7 lg:w-auto lg:h-auto">
         <img src="./assets/icons/left-arrow-icon.svg" alt="left arrow icon" />
@@ -411,7 +477,8 @@
   </footer>
 
   <!-- Popup -->
-  <div class="fixed left-0 bottom-0 right-0 top-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50"
+  <div
+    class="fixed left-0 bottom-0 right-0 top-0 hidden flex justify-center items-center p-6 bg-black bg-opacity-50 z-50"
     id="popup">
     <section class="bg-primaryWhite p-5 rounded-lg relative">
       <img src="" alt="" id="popup-image">

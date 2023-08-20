@@ -52,6 +52,44 @@
 		@apply bg-primaryGreen text-primaryGrey hover:bg-primaryWhite hover:text-primaryGreen;
 	}
 
+	/* Slide */
+
+	.slide {
+		@apply h-full gap-x-16 justify-center;
+	}
+
+	.slide-container {
+		@apply flex-1 flex justify-center lg:justify-end items-center;
+	}
+
+	.slide-wrapper {
+		@apply max-w-[599px] w-full px-3;
+	}
+
+	.slide-title {
+		@apply font-montserrat text-primaryBlack font-medium text-5xl lg:text-6xl leading-[116.667%];
+	}
+
+	.slide-content {
+		@apply mt-8 mb-[53px] lg:mt-11 lg:mb-[72px];
+	}
+
+	.slide-buttons {
+		@apply inline-flex flex-col gap-7 lg:gap-9 lg:flex-row;
+	}
+
+	.slide-secondary-button {
+		@apply bg-transparent border-primaryGreen hover:bg-primaryGreen hover:text-primaryWhite button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px];
+	}
+
+	.slide-image-wrapper {
+		@apply hidden lg:flex flex-1;
+	}
+
+	.slide-image {
+		@apply object-cover max-w-full flex-1;
+	}
+
 	/* Card */
 
 	.card {
@@ -104,6 +142,10 @@
 
 .hamburger-button-is-active .hamburger-button-bar-3 {
 	transform: translateY(-235%) rotate(-45deg);
+}
+
+.grid-item {
+	display: flex;
 }
 
 .grid-sizer,
