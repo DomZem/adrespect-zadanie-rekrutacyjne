@@ -45,7 +45,7 @@
 @layer components {
 	/* Button */
 	.button {
-		@apply rounded-full px-6 py-3 duration-200;
+		@apply rounded-full px-6 py-3 duration-200 text-center;
 	}
 
 	.primaryGreenButton {
@@ -93,15 +93,15 @@
 	/* Card */
 
 	.card {
-		@apply py-12 px-10 bg-primaryWhite rounded-[28px] lg:hover:shadow-md lg:duration-200 lg:hover:scale-105;
+		@apply py-9 px-7 lg:py-12 lg:px-10 bg-primaryWhite rounded-[28px] lg:hover:shadow-md lg:duration-200 lg:hover:scale-105;
 	}
 
 	.card-title {
-		@apply font-montserrat mt-8 leading-[115%] font-medium text-[28px] tracking-[-1.4px];
+		@apply font-montserrat mt-8 leading-[115%] font-medium text-[21px] lg:text-[28px] tracking-[-1.4px];
 	}
 
 	.card-content {
-		@apply mb-[63px] text-sm mt-3 tracking-[-0.14px];
+		@apply mb-12 lg:mb-[63px] text-sm mt-3 tracking-[-0.14px];
 	}
 
 	.card-button {
