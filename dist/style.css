@@ -891,6 +891,14 @@ ul > li > a:hover {
   margin-top: 72px;
 }
 
+.mb-\[54px\] {
+  margin-bottom: 54px;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -929,6 +937,18 @@ ul > li > a:hover {
 
 .h-headerHeight {
   height: var(--headerHeight);
+}
+
+.h-\[720px\] {
+  height: 720px;
+}
+
+.min-h-\[720px\] {
+  min-height: 720px;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-0 {
@@ -977,6 +997,18 @@ ul > li > a:hover {
 
 .max-w-containerWidth {
   max-width: var(--containerWidth);
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-\[688px\] {
+  max-width: 688px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .-translate-x-1\/2 {
@@ -1156,6 +1188,11 @@ ul > li > a:hover {
   --tw-bg-opacity: 0.5;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1244,6 +1281,10 @@ ul > li > a:hover {
 
 .pt-\[89px\] {
   padding-top: 89px;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .font-montserrat {
@@ -1500,6 +1541,14 @@ ul > li > a:hover {
     margin-top: 2rem;
   }
 
+  .lg\:mb-\[72px\] {
+    margin-bottom: 72px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1518,6 +1567,10 @@ ul > li > a:hover {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:max-w-\[688px\] {
+    max-width: 688px;
   }
 
   .lg\:grid-cols-3 {
