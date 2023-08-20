@@ -36,5 +36,5 @@ masonryBtn.addEventListener('click', () => {
 	msnry.appended(elems);
 
 	masonryBtn.classList.add('hidden');
-	masonryContainer.classList.remove('masonry-background');
+	masonryContainer.classList.remove('masonry-gradient-background');
 });

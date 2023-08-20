@@ -109,8 +109,8 @@
 	}
 
 	/* Masonry */
-	.masonry-background {
-		@apply after:content-[''] after:absolute after:bottom-0 after:pointer-events-none after:left-0 after:right-0 after:h-1/2 after:bg-masonry-gradient;
+	.masonry-gradient-background {
+		@apply after:content-[''] after:absolute after:bottom-0 after:pointer-events-none after:left-0 after:right-0 after:h-[67.79%] after:bg-masonry-gradient;
 	}
 }
 
