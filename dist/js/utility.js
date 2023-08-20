@@ -1,3 +1,5 @@
+const IMG_URL = './assets/img/projects';
+
 const handleScroll = (event) => {
 	event.preventDefault();
 };

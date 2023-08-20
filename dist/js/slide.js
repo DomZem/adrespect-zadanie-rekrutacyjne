@@ -1,5 +1,5 @@
-const previousSlideButton = document.querySelector('.previousSlideButton');
-const nextSlideButton = document.querySelector('.nextSlideButton');
+const previousSlideButton = document.querySelector('.previous-slide-button');
+const nextSlideButton = document.querySelector('.next-slide-button');
 
 let slideIndex = 1;
 

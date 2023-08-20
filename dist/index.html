@@ -30,7 +30,7 @@
   <!-- Header -->
   <header
     class="h-headerHeight w-full fixed top-0 left-0 bg-primaryWhite shadow-md right-0 z-40 flex justify-center items-center">
-    <div class="max-w-containerWidth items-center w-full flex justify-between px-3">
+    <div class="max-w-containerWidth items-center w-full flex justify-between px-3 lg:px-0">
       <a href="#index">
         <img src="./assets/giarddesign-logo.svg" alt="giarddesign logo">
       </a>
@@ -62,7 +62,7 @@
                 <i class="fa-solid fa-chevron-down text-xs"></i>
               </button>
 
-              <ul class="px-2 flex-col hidden mobile-dropdown-menu">
+              <ul class="mobile-dropdown-menu px-2 flex-col hidden">
                 <li class="py-2 border-b">
                   <a href="#offer">Oferta 1</a>
                 </li>
@@ -101,7 +101,7 @@
                 <i class="fa-solid fa-chevron-down text-xs"></i>
               </button>
               <div
-                class="absolute right-1/2 translate-x-1/2 top-8 bg-primaryWhite hidden w-[200%] shadow-md p-4 rounded-lg desktop-dropdown-menu">
+                class="desktop-dropdown-menu absolute right-1/2 translate-x-1/2 top-8 bg-primaryWhite hidden w-[200%] shadow-md p-4 rounded-lg">
                 <ul class="flex flex-col gap-3">
                   <li>
                     <a href="#offer">Oferta 1</a>
@@ -130,9 +130,8 @@
           </ul>
 
           <div class="inline-flex items-center gap-x-3">
-            <input
-              class="outline-none px-2 py-1 rounded-md border shadow-sm translate-x-full opacity-0 w-0 duration-200 search-input"
-              type="text" placeholder="Wyszukaj">
+            <input class="outline-none px-2 py-1 rounded-md border shadow-sm hidden search-input" type="text"
+              placeholder="Wyszukaj">
             <button class="search-input-button">
               <img src="./assets/icons/search-icon.svg" alt="search icon">
             </button>
@@ -165,8 +164,8 @@
               indywidualnym podejściem do każdego projektu.</p>
 
             <div class="slide-buttons">
-              <a href="#contact" class="button primaryGreenButton">Skontaktuj się z nami</a>
-              <a href="#projects" class="slide-secondary-button ">Zobacz
+              <a href="#contact" class="button primary-green-button">Skontaktuj się z nami</a>
+              <a href="#projects" class="slide-secondary-button">Zobacz
                 nasze realizacje
                 <i class="fa-solid fa-arrow-down animate-bounce"></i>
               </a>
@@ -196,7 +195,7 @@
               realizacje, które zainspirują Cię do stworzenia wymarzonego ogrodu.</p>
 
             <div class="slide-buttons">
-              <a href="#contact" class="button primaryGreenButton">Skontaktuj się z nami</a>
+              <a href="#contact" class="button primary-green-button">Skontaktuj się z nami</a>
               <a href="#projects" class="slide-secondary-button">Zobacz
                 nasze realizacje
                 <i class="fa-solid fa-arrow-down animate-bounce"></i>
@@ -229,7 +228,7 @@
               dotychczasowe osiągnięcia.</p>
 
             <div class="slide-buttons">
-              <a href="#contact" class="button primaryGreenButton">Skontaktuj się z nami</a>
+              <a href="#contact" class="button primary-green-button">Skontaktuj się z nami</a>
               <a href="#projects" class="slide-secondary-button">Zobacz
                 nasze realizacje
                 <i class="fa-solid fa-arrow-down animate-bounce"></i>
@@ -247,12 +246,12 @@
     <!-- Buttons to slide -->
     <div class="absolute bottom-0 right-0 bg-primaryWhite flex gap-x-6 lg:gap-x-8 py-4 px-6 lg:py-6 lg:px-8 z-10">
       <!-- Previous -->
-      <button class="previousSlideButton w-7 h-7 lg:w-auto lg:h-auto">
+      <button class="previous-slide-button w-7 h-7 lg:w-auto lg:h-auto">
         <img src="./assets/icons/left-arrow-icon.svg" alt="left arrow icon" />
       </button>
 
       <!-- Next -->
-      <button class="nextSlideButton w-7 h-7 lg:w-auto lg:h-auto" onclick="plusSlides(1)">
+      <button class="next-slide-button w-7 h-7 lg:w-auto lg:h-auto">
         <img src="./assets/icons/right-arrow-icon.svg" alt="right arrow icon" />
       </button>
     </div>
@@ -262,7 +261,7 @@
   <main>
     <!-- Offer -->
     <section class="bg-primaryGrey" id="offer">
-      <div class="max-w-containerWidth mx-auto pt-[89px] lg:pt-[120px] pb-[118px] lg:pb-[160px] px-3">
+      <div class="max-w-containerWidth mx-auto pt-[89px] lg:pt-[120px] pb-[118px] lg:pb-[160px] px-3 lg:px-0">
         <div class="max-w-[1040px] mx-auto flex justify-start mb-[72px] lg:mb-24">
           <section class="max-w-[709px]">
             <h2 class="font-montserrat text-4xl lg:text-5xl font-medium tracking-[-1.44px] leading-[115%]">
@@ -346,7 +345,7 @@
 
     <!-- Projects -->
     <section class="bg-primaryBeige pt-[89px] lg:pt-[120px] pb-8 lg:pb-11" id="projects">
-      <div class="max-w-[1120px] mx-auto pb-[72px] lg:pb-24 px-3">
+      <div class="max-w-[1120px] mx-auto pb-[72px] lg:pb-24 px-3 lg:px-0">
         <h2 class="font-montserrat leading-[115%] tracking-[-1.44px] text-4xl lg:text-5xl">Nasze <span
             class="italic">projekty</span></h2>
       </div>
@@ -356,43 +355,39 @@
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-1.jpg" alt="garden 1">
+          <img src="./assets/img/projects/project-1.jpg" alt="project 1">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-2.jpg" alt="garden 2">
+          <img src="./assets/img/projects/project-2.jpg" alt="project 2">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-3.jpg" alt="garden 3">
+          <img src="./assets/img/projects/project-3.jpg" alt="project 3">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-4.jpg" alt="garden 4">
+          <img src="./assets/img/projects/project-4.jpg" alt="project 4">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-5.jpg" alt="garden 5">
+          <img src="./assets/img/projects/project-5.jpg" alt="project 5">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-6.jpg" alt="garden 6">
+          <img src="./assets/img/projects/project-6.jpg" alt="project 6">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-7.jpg" alt="garden 7">
+          <img src="./assets/img/projects/project-7.jpg" alt="project 7">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-8.jpg" alt="garden 8">
+          <img src="./assets/img/projects/project-8.jpg" alt="project 8">
         </div>
 
         <div class="grid-item">
-          <img src="./assets/img/garden/garden-9.jpg" alt="garden 9">
-        </div>
-
-        <div class="grid-item grid-item-hidden">
-          <img src="./assets/img/garden/garden-1.jpg" alt="garden 9">
+          <img src="./assets/img/projects/project-9.jpg" alt="project 9">
         </div>
 
         <button
@@ -425,7 +420,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-primaryBlack px-3 py-[60px] lg:py-20 text-primaryGrey">
+  <footer class="bg-primaryBlack px-3 lg:px-0 py-[60px] lg:py-20 text-primaryGrey">
     <div class="max-w-[1040px] mx-auto">
       <section class="flex flex-col md:flex-row justify-between items-start gap-4 md:items-center">
         <a href="#index">
@@ -435,7 +430,7 @@
         <div class="flex flex-col md:flex-row items-start md:items-center gap-[18px] md:gap-6">
           <p>Daj znać, co możemy dla Ciebie zrobić!</p>
 
-          <button class="button primaryGreenButton">Skontaktuj się z nami</button>
+          <button class="button primary-green-button">Skontaktuj się z nami</button>
         </div>
       </section>
 
@@ -485,24 +480,19 @@
 
   <!-- Popup -->
   <div
-    class="fixed left-0 bottom-0 right-0 top-0 hidden flex justify-center items-center p-6 bg-black bg-opacity-50 z-50"
-    id="popup">
+    class="popup fixed left-0 bottom-0 right-0 top-0 hidden justify-center items-center p-6 bg-black bg-opacity-50 z-50">
     <section class="bg-primaryWhite p-5 rounded-lg relative">
-      <img src="" alt="" id="popup-image">
+      <img class="popup-image" src="" alt="">
 
       <button
-        class="w-8 h-8 flex justify-center items-center absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 bg-black hover:bg-red-600 rounded-full duration-200"
-        id="popup-close-btn"><i class="fa-solid fa-xmark text-white"></i></button>
+        class="popup-close-btn w-8 h-8 flex justify-center items-center absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 bg-black hover:bg-red-600 rounded-full duration-200"><i
+          class="fa-solid fa-xmark text-white"></i></button>
 
-      <button
-        class="w-8 h-8 flex justify-center items-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-slate-200 rounded-full"
-        id="previous-popup-image-btn">
+      <button class="previous-popup-image-btn popup-image-button left-0 top-1/2 -translate-y-1/2 -translate-x-1/2">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
 
-      <button
-        class="w-8 h-8 flex justify-center items-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-slate-200 rounded-full"
-        id="next-popup-image-btn">
+      <button class="next-popup-image-btn popup-image-button right-0 top-1/2 -translate-y-1/2 translate-x-1/2">
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     </section>

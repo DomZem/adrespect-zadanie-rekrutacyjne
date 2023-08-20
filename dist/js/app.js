@@ -10,7 +10,5 @@ hamburgerBtn.addEventListener('click', (event) => {
 });
 
 searchInputBtn.addEventListener('click', () => {
-	searchInput.classList.toggle('translate-x-full');
-	searchInput.classList.toggle('opacity-0');
-	searchInput.classList.toggle('w-0');
+	searchInput.classList.toggle('hidden');
 });

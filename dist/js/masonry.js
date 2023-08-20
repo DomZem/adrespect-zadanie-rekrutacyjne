@@ -8,13 +8,34 @@ const msnry = new Masonry(masonryContainer, {
 	percentPosition: true,
 });
 
-const getItemElement = (index) => {
+const newImages = [
+	{
+		imageURL: `${IMG_URL}/project-10.jpg`,
+		imageAlt: 'project 10',
+	},
+
+	{
+		imageURL: `${IMG_URL}/project-11.jpg`,
+		imageAlt: 'project 11',
+	},
+
+	{
+		imageURL: `${IMG_URL}/project-12.jpg`,
+		imageAlt: 'project 12',
+	},
+];
+
+const getItemElement = (newImage) => {
 	const outerDiv = document.createElement('div');
 	outerDiv.classList.add('grid-item');
 
 	const imgElement = document.createElement('img');
-	imgElement.src = `./assets/img/garden/garden-${index + 1}.jpg`;
-	imgElement.alt = `garden ${9 + index}`;
+
+	imgElement.src = newImage.imageURL;
+	imgElement.alt = newImage.imageAlt;
+	imgElement.onload = () => {
+		msnry.layout();
+	};
 
 	outerDiv.appendChild(imgElement);
 
@@ -25,14 +46,16 @@ masonryBtn.addEventListener('click', () => {
 	const elems = [];
 	const fragment = document.createDocumentFragment();
 
-	for (let i = 0; i < 9; i++) {
-		const elem = getItemElement(i);
+	for (let i = 0; i < newImages.length; i++) {
+		const elem = getItemElement(newImages[i]);
 		fragment.appendChild(elem);
 		elems.push(elem);
 	}
 
-	// append elements to grid container
+	// Append elements to grid container
 	masonryContainer.appendChild(fragment);
+
+	// Append and layout new elements
 	msnry.appended(elems);
 
 	masonryBtn.classList.add('hidden');

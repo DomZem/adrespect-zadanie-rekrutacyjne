@@ -48,8 +48,12 @@
 		@apply rounded-full px-6 py-3 duration-200 text-center;
 	}
 
-	.primaryGreenButton {
+	.primary-green-button {
 		@apply bg-primaryGreen text-primaryGrey hover:bg-primaryWhite hover:text-primaryGreen;
+	}
+
+	.popup-image-button {
+		@apply w-8 h-8 flex justify-center items-center absolute bg-slate-200 hover:bg-slate-300 duration-200 rounded-full;
 	}
 
 	/* Slide */
@@ -63,7 +67,7 @@
 	}
 
 	.slide-wrapper {
-		@apply max-w-[599px] w-full px-3;
+		@apply max-w-[599px] w-full px-3 lg:px-0;
 	}
 
 	.slide-title {
