@@ -59,7 +59,7 @@
             <li class="border-b py-3">
               Oferta
               <button class="mobile-dropdown-menu-button">
-                <img src="./assets/icons/arrow-down-icon.svg" alt="arrow down icon">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
               </button>
 
               <ul class="px-2 flex-col hidden mobile-dropdown-menu">
@@ -98,7 +98,7 @@
             <li class="relative">
               <button class="desktop-dropdown-menu-button flex items-center gap-x-[5px]">
                 Oferta
-                <img src="./assets/icons/arrow-down-icon.svg" alt="search icon" />
+                <i class="fa-solid fa-chevron-down text-xs"></i>
               </button>
               <div
                 class="absolute right-1/2 translate-x-1/2 top-8 bg-primaryWhite hidden w-[200%] shadow-md p-4 rounded-lg desktop-dropdown-menu">
@@ -165,16 +165,16 @@
 
             <div class="inline-flex flex-col gap-4 lg:gap-9">
               <button class="button primaryGreenButton">Skontaktuj się z nami</button>
-              <button
-                class="bg-transparent border-primaryGreen button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px]">Zobacz
+              <a href="#projects"
+                class="bg-transparent border-primaryGreen hover:bg-primaryGreen hover:text-primaryWhite button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px]">Zobacz
                 nasze realizacje
-                <img class="animate-bounce" src="./assets/icons/green-arrow-down-icon.svg"
-                  alt="arrow down icon"></button>
+                <i class="fa-solid fa-arrow-down animate-bounce"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <img class="hidden lg:block flex-1" src="./assets/img/intro-garden-medium.jpg" alt="intro garden">
+        <img class="hidden lg:block flex-1" src="./assets/img/intro-garden-medium-1.jpg" alt="intro garden">
       </li>
     </ul>
 
@@ -192,7 +192,6 @@
       </button>
     </div>
   </section>
-
 
   <!-- Main -->
   <main>
@@ -220,7 +219,7 @@
               istniejącej
               przestrzeni.</p>
             <button class="card-button">Dowiedz się więcej
-              <img src="./assets/icons/green-arrow-right-icon.svg" alt="arrow right icon">
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </article>
 
@@ -230,7 +229,7 @@
             <p class="card-content">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
               technologii 3D.</p>
             <button class="card-button">Dowiedz się więcej
-              <img src="./assets/icons/green-arrow-right-icon.svg" alt="arrow right icon">
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </article>
 
@@ -240,7 +239,7 @@
             <p class="card-content">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
               technologii.</p>
             <button class="card-button">Dowiedz się więcej
-              <img src="./assets/icons/green-arrow-right-icon.svg" alt="arrow right icon">
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </article>
         </section>
@@ -267,8 +266,9 @@
               współczesnego
               trybu życia.</p>
 
-            <button class="button gap-x-2 flex items-center text-primaryWhite border">Poznaj nas bliżej <img
-                src="./assets/icons/white-right-arrow-icon.svg" alt="right arrow icon"></button>
+            <button
+              class="button gap-x-2 flex items-center text-primaryWhite border duration-200 hover:bg-primaryWhite hover:text-primaryGreen">Poznaj
+              nas bliżej <i class="fa-solid fa-arrow-right"></i></button>
           </section>
         </div>
       </div>
@@ -326,8 +326,8 @@
         </div>
 
         <button
-          class="button inline-flex items-center gap-x-2 absolute bottom-0 left-1/2 border border-primaryBlack z-10 -translate-x-1/2 masonry-button">Rozwiń
-          <img class="animate-bounce" src="./assets/icons/arrow-down.svg" alt="arrow down icon">
+          class="button inline-flex items-center gap-x-2 absolute bottom-0 left-1/2 border border-primaryBlack z-10 -translate-x-1/2 masonry-button hover:bg-primaryBlack hover:text-primaryWhite">Rozwiń
+          <i class="fa-solid fa-arrow-down animate-bounce"></i>
         </button>
       </section>
     </section>
@@ -344,7 +344,8 @@
         <section>
           <p class="text-primaryGrey mb-6">Śledź nasze najnowsze realizacje!</p>
 
-          <a class="button bg-primaryGrey inline-block text-primaryGreen" href="#">Instagram</a>
+          <a class="button bg-primaryGrey inline-block text-primaryGreen hover:bg-primaryBlack hover:text-primaryWhite"
+            href="#">Instagram</a>
         </section>
       </div>
     </section>

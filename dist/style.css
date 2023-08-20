@@ -1164,6 +1164,16 @@ ul > li > a:hover {
   font-size: 40px;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1341,6 +1351,26 @@ ul > li > a:hover {
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primaryGreen:hover {
+  background-color: var(--primaryGreen);
+}
+
+.hover\:bg-primaryWhite:hover {
+  background-color: var(--primaryWhite);
+}
+
+.hover\:bg-primaryBlack:hover {
+  background-color: var(--primaryBlack);
+}
+
+.hover\:text-primaryWhite:hover {
+  color: var(--primaryWhite);
+}
+
+.hover\:text-primaryGreen:hover {
+  color: var(--primaryGreen);
 }
 
 @media (min-width: 768px) {
