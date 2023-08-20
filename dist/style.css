@@ -1215,6 +1215,8 @@ ul > li > a:hover {
   --containerWidth: 1262px;
   --masonryMobileGutterWidth: 22px;
   --masonryDesktopGutterWidth: 44px;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--headerHeight);
 }
 
 .hamburger-button {

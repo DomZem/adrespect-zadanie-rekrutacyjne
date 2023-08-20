@@ -18,8 +18,10 @@
   <!-- Header -->
   <header
     class="h-headerHeight w-full fixed top-0 left-0 bg-primaryWhite shadow-md right-0 z-50 flex justify-center items-center">
-    <div class="max-w-containerWidth w-full flex justify-between px-3">
-      <img src="./assets/giarddesign-logo.svg" alt="giarddesign logo">
+    <div class="max-w-containerWidth items-center w-full flex justify-between px-3">
+      <a href="#index">
+        <img src="./assets/giarddesign-logo.svg" alt="giarddesign logo">
+      </a>
 
       <nav>
         <button class="hamburger-button lg:hidden">
@@ -50,29 +52,29 @@
 
               <ul class="px-2 flex-col hidden mobile-dropdown-menu">
                 <li class="py-2 border-b">
-                  <a href="#">Oferta 1</a>
+                  <a href="#offer">Oferta 1</a>
                 </li>
 
                 <li class="py-2 border-b">
-                  <a href="#">Oferta 2</a>
+                  <a href="#offer">Oferta 2</a>
                 </li>
 
                 <li class="py-2">
-                  <a href="#">Oferta 3</a>
+                  <a href="#offer">Oferta 3</a>
                 </li>
               </ul>
             </li>
 
             <li class="border-b py-3">
-              <a href="#">O firmie</a>
+              <a href="#aboutCompany">O firmie</a>
             </li>
 
             <li class="border-b py-3">
-              <a href="#">Realizacje</a>
+              <a href="#projects">Realizacje</a>
             </li>
 
             <li class="border-b py-3">
-              <a href="#">Kontakt</a>
+              <a href="#contact">Kontakt</a>
             </li>
 
           </ul>
@@ -90,28 +92,28 @@
                 class="absolute right-1/2 translate-x-1/2 top-8 bg-primaryWhite hidden w-[200%] shadow-md p-4 rounded-lg desktop-dropdown-menu">
                 <ul class="flex flex-col gap-3">
                   <li>
-                    <a href="#">Oferta 1</a>
+                    <a href="#offer">Oferta 1</a>
                   </li>
                   <li>
-                    <a href="#">Oferta 2</a>
+                    <a href="#offer">Oferta 2</a>
                   </li>
                   <li>
-                    <a href="#">Oferta 3</a>
+                    <a href="#offer">Oferta 3</a>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li>
-              <a href="#">O firmie</a>
+              <a href="#aboutCompany">O firmie</a>
             </li>
 
             <li>
-              <a href="#">Realizacje</a>
+              <a href="#projects">Realizacje</a>
             </li>
 
             <li>
-              <a href="#">Kontakt</a>
+              <a href="#contact">Kontakt</a>
             </li>
           </ul>
 
@@ -130,63 +132,60 @@
   </header>
 
   <!-- Intro -->
-  <section>
-    <!-- Intro -->
-    <section class="h-[calc(100vh-72px)] mt-[72px] bg-primaryBeige relative">
+  <section class="h-[calc(100vh-72px)] mt-[72px] bg-primaryBeige relative" id="index">
+    <ul class="h-full">
+      <!-- First slide -->
+      <li class="h-full gap-x-16 justify-center slide-fade-in slide">
+        <div class="flex-1 flex justify-center lg:justify-end items-center">
+          <div class="max-w-[599px] w-full px-3">
+            <h1 class="font-montserrat font-medium text-4xl lg:text-6xl leading-[116.667%]">Nowoczesna aranżacja
+              Twojego ogrodu
+            </h1>
 
-      <ul class="h-full">
-        <!-- First slide -->
-        <li class="h-full gap-x-16 justify-center slide-fade-in slide">
-          <div class="flex-1 flex justify-center lg:justify-end items-center">
-            <div class="max-w-[599px] w-full px-3">
-              <h1 class="font-montserrat font-medium text-4xl lg:text-6xl leading-[116.667%]">Nowoczesna aranżacja
-                Twojego ogrodu
-              </h1>
+            <p class="mt-8 mb-10 lg:mt-11 lg:mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka
+              estetyka
+              realizacji.
+              Oferujemy
+              kompleksowy
+              zakres
+              usług z
+              indywidualnym podejściem do każdego projektu.</p>
 
-              <p class="mt-8 mb-10 lg:mt-11 lg:mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka
-                estetyka
-                realizacji.
-                Oferujemy
-                kompleksowy
-                zakres
-                usług z
-                indywidualnym podejściem do każdego projektu.</p>
-
-              <div class="inline-flex flex-col gap-4 lg:gap-9">
-                <button class="button primaryGreenButton">Skontaktuj się z nami</button>
-                <button
-                  class="bg-transparent border-primaryGreen button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px]">Zobacz
-                  nasze realizacje
-                  <img class="animate-bounce" src="./assets/icons/green-arrow-down-icon.svg"
-                    alt="arrow down icon"></button>
-              </div>
+            <div class="inline-flex flex-col gap-4 lg:gap-9">
+              <button class="button primaryGreenButton">Skontaktuj się z nami</button>
+              <button
+                class="bg-transparent border-primaryGreen button inline-flex items-center gap-x-2 border text-primaryGreen px-[22px]">Zobacz
+                nasze realizacje
+                <img class="animate-bounce" src="./assets/icons/green-arrow-down-icon.svg"
+                  alt="arrow down icon"></button>
             </div>
           </div>
+        </div>
 
-          <img class="hidden lg:block flex-1" src="./assets/img/intro-garden-medium.jpg" alt="intro garden">
-        </li>
-      </ul>
+        <img class="hidden lg:block flex-1" src="./assets/img/intro-garden-medium.jpg" alt="intro garden">
+      </li>
+    </ul>
 
 
-      <!-- Buttons to slide -->
-      <div class="absolute bottom-0 right-0 flex gap-x-5 lg:gap-x-8 bg-primaryWhite py-3 px-5 lg:py-6 lg:px-8 z-40">
-        <!-- Previous -->
-        <button class="previousSlideButton w-7 h-7 lg:w-auto lg:h-auto">
-          <img src="./assets/icons/left-arrow-icon.svg" alt="left arrow icon" />
-        </button>
+    <!-- Buttons to slide -->
+    <div class="absolute bottom-0 right-0 flex gap-x-5 lg:gap-x-8 bg-primaryWhite py-3 px-5 lg:py-6 lg:px-8 z-40">
+      <!-- Previous -->
+      <button class="previousSlideButton w-7 h-7 lg:w-auto lg:h-auto">
+        <img src="./assets/icons/left-arrow-icon.svg" alt="left arrow icon" />
+      </button>
 
-        <!-- Next -->
-        <button class="nextSlideButton w-7 h-7 lg:w-auto lg:h-auto" onclick="plusSlides(1)">
-          <img src="./assets/icons/right-arrow-icon.svg" alt="right arrow icon" />
-        </button>
-      </div>
-    </section>
+      <!-- Next -->
+      <button class="nextSlideButton w-7 h-7 lg:w-auto lg:h-auto" onclick="plusSlides(1)">
+        <img src="./assets/icons/right-arrow-icon.svg" alt="right arrow icon" />
+      </button>
+    </div>
   </section>
+
 
   <!-- Main -->
   <main>
     <!-- Offer -->
-    <section class="bg-primaryGrey">
+    <section class="bg-primaryGrey" id="offer">
       <div class="max-w-containerWidth mx-auto pt-[120px] pb-[160px] px-3">
         <div class="max-w-[1040px] mx-auto flex justify-start mb-24">
           <section class="max-w-[709px]">
@@ -237,7 +236,7 @@
     </section>
 
     <!-- About company -->
-    <section class="bg-primaryGreen">
+    <section class="bg-primaryGreen" id="aboutCompany">
       <div class="flex gap-16">
         <img class="hidden w-1/2 lg:block" src="./assets/img/about-company.jpg" alt="about company">
 
@@ -264,7 +263,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="bg-primaryBeige pt-[120px] pb-11">
+    <section class="bg-primaryBeige pt-[120px] pb-11" id="projects">
       <div class="max-w-[1120px] mx-auto pb-24">
         <h2 class="font-montserrat leading-[115%] tracking-[-1.44px] text-5xl">Nasze <span
             class="italic">projekty</span></h2>
@@ -318,7 +317,7 @@
     </section>
 
     <!-- Stay in contact -->
-    <section class="py-[60px] flex justify-center items-center">
+    <section class="py-[60px] flex justify-center items-center" id="contact">
       <div class="max-w-[1040px] flex flex-col lg:flex-row gap-16 bg-primaryGreen p-8 lg:py-[120px] lg:px-[110px]">
         <section class="text-primaryGrey font-montserrat text-[40px] mt-[14px]">
           <h2 class="leading-[120%] tracking-[-2px]">Zostańmy w kontakcie!</h2>
@@ -339,7 +338,9 @@
   <footer class="bg-primaryBlack px-3 py-11 lg:py-20 text-primaryGrey">
     <div class="max-w-[1040px] mx-auto">
       <section class="flex flex-col md:flex-row justify-between items-start gap-3 md:items-center">
-        <img src="./assets/giarddesign-logo-white.svg" alt="giarddesign logo">
+        <a href="#index">
+          <img src="./assets/giarddesign-logo-white.svg" alt="giarddesign logo">
+        </a>
 
         <div class="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6">
           <p>Daj znać, co możemy dla Ciebie zrobić!</p>
