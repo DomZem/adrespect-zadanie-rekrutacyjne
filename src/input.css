@@ -17,6 +17,8 @@
 	/* Others */
 	--headerHeight: 72px;
 	--containerWidth: 1262px;
+	--masonryMobileGutterWidth: 22px;
+	--masonryDesktopGutterWidth: 44px;
 }
 
 @layer base {
@@ -69,19 +71,6 @@
 	.masonry-background {
 		@apply after:content-[''] after:absolute after:bottom-0 after:pointer-events-none after:left-0 after:right-0 after:h-1/2 after:bg-masonry-gradient;
 	}
-
-	.grid-sizer,
-	.grid-item {
-		@apply w-1/2 lg:w-1/3;
-	}
-
-	.grid-item {
-		@apply flex mb-[43px];
-	}
-
-	.grid-item > img {
-		@apply flex-1 object-cover cursor-pointer hover:scale-105 duration-200;
-	}
 }
 
 .hamburger-button {
@@ -112,4 +101,44 @@
 
 .hamburger-button-is-active .hamburger-button-bar-3 {
 	transform: translateY(-235%) rotate(-45deg);
+}
+
+.grid-sizer,
+.grid-item {
+	width: calc(50% - (((var(--masonryMobileGutterWidth)) * (1 / 2))));
+}
+
+.gutter-sizer {
+	width: var(--masonryMobileGutterWidth);
+}
+
+.grid-item {
+	margin-bottom: var(--masonryMobileGutterWidth);
+}
+
+.grid-item > img {
+	flex: 1;
+	object-fit: cover;
+	width: 100%;
+	cursor: pointer;
+	transition: 200ms;
+}
+
+.grid-item > img:hover {
+	transform: scale(1.01);
+}
+
+@media screen and (min-width: 1024px) {
+	.grid-sizer,
+	.grid-item {
+		width: calc(33.33% - (((var(--masonryDesktopGutterWidth)) * (1 / 3) * 2)));
+	}
+
+	.gutter-sizer {
+		width: var(--masonryDesktopGutterWidth);
+	}
+
+	.grid-item {
+		margin-bottom: var(--masonryDesktopGutterWidth);
+	}
 }

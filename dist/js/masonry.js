@@ -5,7 +5,7 @@ const masonryBtn = document.querySelector('.masonry-button');
 const msnry = new Masonry(grid, {
 	itemSelector: '.grid-item',
 	columnWidth: '.grid-sizer',
-	gutter: 43,
+	gutter: '.gutter-sizer',
 	percentPosition: true,
 });
 
